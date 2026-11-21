@@ -1,0 +1,19 @@
+{
+  "name": "zkverify-gatekeeper-toolkit",
+  "version": "1.0.0",
+  "description": "Testing toolkit for zkVerify Agent Games Proof Gatekeeper agents: decision simulator, circuit provability checker, and mocked Kurier integration suite.",
+  "type": "module",
+  "private": false,
+  "license": "MIT",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "test": "node test/simulate.mjs",
+    "test:proof": "node test/proof-check.mjs",
+    "test:kurier": "node test/kurier-check.mjs"
+  },
+  "dependencies": {
+    "circomlibjs": "0.1.7",
+    "js-sha3": "0.8.0",
+    "snarkjs": "0.7.4"
+  }
+}
